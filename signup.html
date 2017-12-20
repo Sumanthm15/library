@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title style="font-family: Times New Roman">Online Library Management System</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body{
+  background-image: url("4.jpg");
+  background-attachment:fixed;
+  background-size: 100% 100%; 
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                       
+      </button>
+      <a class="navbar-brand" href="welcome.html" style="font-family: Times New Roman; color: white">Online Library</a>
+      </div>  
+  <div class="collapse navbar-collapse" id="myNavbar" style="text-align: center;">
+    <ul class="nav navbar-nav ">
+      <li>
+        <a href="books.html" ><span class="glyphicon glyphicon-book"></span> <strong>Books</strong></a>
+      </li>
+      <li>
+        <a href="contact.html"><span class="glyphicon glyphicon-send"></span> <strong>Contact</strong></a>
+      </li>
+    </ul>
+</div>
+</nav>
+<div class="jumbotron" style="background-color: black; opacity: 0.8; margin: 150px 0px">
+  <h2 style="text-align: center; font-family: Times New Roman; color: white">Staff Signup</h2>
+<div class="container" style="margin-left: 10px">
+  
+  <form class="form-horizontal" action="staff_signup.php" method="post">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="ID" style="font-family: Times New Roman; font-size: 20px; color: white">Staff ID:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" required="required" placeholder="Enter ID" name="staff_id">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name" style="font-family: Times New Roman; font-size: 20px; color: white">Name:</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control" required="required" placeholder="Enter Name" name="staff_name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd" style="font-family: Times New Roman; font-size: 20px; color: white">Password:</label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" required="required" placeholder="Enter Password" name="staff_password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="dsgn" style="font-family: Times New Roman; font-size: 20px; color: white">Designation:</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control" required="required" placeholder="Enter Designation" name="designation">
+      </div>
+    </div>
+    <div class="form-group" style="text-align: center;">        
+      <div class="col-sm-offset-2 col-sm-4">
+        <button type="submit" value="submit" class="btn btn-primary btn-lg">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="container" style="text-align: center;">
+  <a href="stchecklist.php" type="button" class="btn btn-success btn-lg" ><span class="glyphicon glyphicon-hand-left"></span> Back</a>
+</div>
+</div>
+</body>
+</html>
